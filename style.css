@@ -1,6 +1,9 @@
 :root {
     box-sizing: border-box;
     font-size: 16px;
+
+    --hero-colour: #0891b2;
+    --box-shadow: 0.3rem 0.3rem 0.3rem 0 rgb(35, 34, 34);
 }
 
 *,
@@ -17,35 +20,89 @@
 }
 
 
-.about-background {
+.header-background {
     width: 100%;
-    height: 60vh; 
+    height: 70vh; 
     position: absolute;
-    /* top: -15px; */
+    top: -15px;
     left: 0;
     z-index: -1;
-    background-color: gray;
+    background-color: var(--hero-colour);
     transform: skewY(-10deg);
     transform-origin: top left;
-    box-shadow: 0 0.3rem 0.3rem 0 rgb(20, 20, 20);
+    box-shadow: var(--box-shadow);
   }
 
-.about {
-    /* grid-row: 1; */
-    height: 70vh;
+.header {
+    height: 60vh;
+    /* padding-top: 2rem; */
 }
 
-.my-work{
-    /* margin: 0 50px; */
+.header-content {
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+
+    background: white;
+    box-shadow: var(--box-shadow);
+}
+
+.about-section{
+    padding: 2rem 2rem 1rem 1rem;
+}
+
+.about-section h2 {
+    margin-bottom: 1rem;
+}
+
+.header-content h1 {
+    position: absolute;
+    z-index: 2;
+    color: whitesmoke;
+    font-size: 3rem;
+    top: 22rem;
+    left: 12rem;
+}
+
+.photo-section img{
+    margin: 0 1rem 1rem 0;
+    float: left;
+    position: relative;
+    top: -2rem;
+    left: -2rem;
+    width: clamp(200px, 40vw, 380px);
+
+    box-shadow: var(--box-shadow);
+    z-index: 1;
+}
+
+.icons {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons img {
+    margin: .5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.my-work h2{
+    padding-bottom: 2rem;
 }
 
 .projects {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
 .project {
     background-color: brown;
+}
+
+@media (min-width: 400px) and (max-width: 900px) {
+    
 }

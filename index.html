@@ -8,18 +8,39 @@
 </head>
 <body>
     <main class="main">
-        <section class="about">
-            <div class="about-background"></div>
-            <div class="photo-section">
-                <h1></h1>
-                <img src="" alt="">
+        <section class="header">
+            <div class="header-background"></div>
+            <div class="header-content">
+                <h1>Vlad Petruk</h1>
+                <div class="photo-section">
+                    <picture>
+                        <!-- Change pictures here -->
+                        <source
+                          media="(max-width: 400px)"
+                          srcset="./images/profile-small.jpg"
+                        />
+                        <source
+                          media="(min-width: 601px)"
+                          srcset="./images/dark-s-big.jpg"
+                        />
+                        <img
+                          src="./images/dark-s-big.jpg"
+                          alt="placeholder"
+                          class="profile-picture"
+                        />
+                      </picture>
+                </div>
+                <div class="about-section">
+                    <h2>About me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh praesent tristique magna sit amet purus gravida quis blandit. Nunc id cursus metus aliquam eleifend mi in. Volutpat diam ut venenatis tellus in metus. Sapien pellentesque habitant morbi tristique. Nam aliquam sem et tortor consequat id porta.</p>
+                    <div class="icons">
+                        <img src="./icons/github-original.svg" alt="">
+                        <img src="./icons/linkedin-plain.svg" alt="">
+                    </div>
+                </div>
+            </section>
             </div>
-            <div class="about-section">
-                <h2>aasf</h2>
-                <p></p>
-                <div class="icons"></div>
-            </div>
-        </section>
+            
 
         <section class="my-work">
             <h2>My work</h2>
