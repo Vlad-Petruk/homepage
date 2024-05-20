@@ -4,6 +4,7 @@
 
     --hero-colour: #0891b2;
     --box-shadow: 0.3rem 0.3rem 0.3rem 0 rgb(35, 34, 34);
+    --box-shadow-lighter: 0.3rem 0.3rem 0.3rem 0 rgb(74, 70, 70);
 }
 
 *,
@@ -35,7 +36,7 @@
 
 .header {
     height: 60vh;
-    /* padding-top: 2rem; */
+    margin-bottom: 3rem;
 }
 
 .header-content {
@@ -89,7 +90,9 @@
 }
 
 .my-work h2{
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
 }
 
 .projects {
@@ -100,8 +103,12 @@
 }
 
 .project {
-    /* background-color: brown; */
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-lighter);
+    transition: transorm .2s ease-in-out;
+}
+
+.project:hover{
+    transform: scale(1.01);
 }
 
 .project img {
@@ -127,6 +134,27 @@
     width: 1.8rem;
     height: 1.8rem;
     margin: 0 .3rem;
+}
+
+footer{
+    margin-top: 3rem;
+    background: var(--hero-colour);
+    color: white;
+    font-size: 1.5rem;
+}
+
+.contact-me h2 {
+    margin: 1rem 0;
+}
+
+.phone-number, 
+.e-mail {
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    width: 2rem;
 }
 
 @media (min-width: 400px) and (max-width: 900px) {
