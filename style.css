@@ -100,7 +100,33 @@
 }
 
 .project {
-    background-color: brown;
+    /* background-color: brown; */
+    box-shadow: var(--box-shadow);
+}
+
+.project img {
+    width: 100%;
+}
+
+.description{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.description p {
+    margin-bottom: 3rem;
+}
+
+.name-and-links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.project-icons img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 .3rem;
 }
 
 @media (min-width: 400px) and (max-width: 900px) {
