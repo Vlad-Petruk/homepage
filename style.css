@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lato:wght@400;700;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
+    font-family: "Lato", sans-serif;
     box-sizing: border-box;
     font-size: 16px;
 
@@ -15,7 +18,7 @@
     padding: 0;
 }
 
-.main, footer {
+.main {
     padding-left: calc(10vw - 20px);
     padding-right: calc(10vw - 20px);
 }
@@ -191,9 +194,6 @@ footer{
     width: 2rem;
 }
 
-@media screen and (max-width: 500px) {
-    
-}
 
 @media screen and (max-width: 990px) {
     .header-content h1 {
@@ -228,4 +228,79 @@ footer{
         position: relative;
         width: 40vw;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .header-content {
+        box-shadow: unset;
+        margin-top: 2rem;
+        margin-left: unset;
+    }
+
+    .header-content h1 {
+        left:calc(10vw + 10px);;
+        top: 100vw;
+    }
+
+    .photo-section img {
+        float: unset;
+        width: 100%;
+        top: unset;
+        left: unset;
+        margin-right: unset;
+        margin-bottom: 1.5rem;
+      }
+
+    .projects {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .about-section {
+        text-align: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .my-work h2 {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .contact-me {
+        padding-left: calc(10vw - 20px); /* Adjust if necessary */
+        padding-right: calc(10vw - 20px);
+
+        width: 100%;
+    }
+
+    .contact-me h2 {
+        text-align: center;
+    }
+
+    .contact-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .phone-number img, 
+    .e-mail img {
+        display: none;
+    }
+
+    .footer-img {
+        margin-top: 1rem;
+        width: 100vw;
+        box-shadow: unset;
+    }
+
 }
