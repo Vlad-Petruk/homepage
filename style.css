@@ -242,6 +242,10 @@ footer{
         top: 100vw;
     }
 
+    .about-section {
+        padding-right: 1rem;
+    }
+
     .photo-section img {
         float: unset;
         width: 100%;
