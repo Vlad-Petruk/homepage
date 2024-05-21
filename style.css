@@ -99,7 +99,7 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .project {
@@ -141,10 +141,28 @@ footer{
     background: var(--hero-colour);
     color: white;
     font-size: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.contact-me {
+    width: 30vw;
+}
+
+.footer-img {
+    width: 45vw;
+    box-shadow: var(--box-shadow-lighter);
 }
 
 .contact-me h2 {
-    margin: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.in-touch {
+    margin-bottom: 2rem;
 }
 
 .phone-number, 
@@ -153,7 +171,20 @@ footer{
     align-items: center;
 }
 
-footer img {
+.phone-number {
+    margin-top: 2rem;
+}
+
+.contact-icons {
+    margin-top: 2rem;
+}
+
+.contact-icons img {
+    margin: .5rem;
+    width: 3rem;
+}
+
+.contact-me img {
     width: 2rem;
 }
 
