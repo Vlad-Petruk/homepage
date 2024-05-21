@@ -18,7 +18,7 @@
     padding: 0;
 }
 
-.main {
+.main, footer {
     padding-left: calc(10vw - 20px);
     padding-right: calc(10vw - 20px);
 }
@@ -272,8 +272,7 @@ footer{
 
     footer {
         flex-direction: column;
-        padding-top: 1rem;
-        padding-bottom: 0;
+        padding: 1rem 0 0 0;
     }
 
     .contact-me {
